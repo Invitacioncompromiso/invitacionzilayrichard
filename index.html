@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compromiso · Zila & Richard</title>
+  <meta name="description" content="Invitación al compromiso de Zila y Richard" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=IM+Fell+English+SC&family=Montserrat:wght@300;400;500;600&family=Old+Standard+TT:wght@400;700&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- PORTADA PERIODICO -->
+  <div class="intro-screen" id="introScreen">
+    <div class="newspaper-cover">
+      <div class="paper-header">
+        <div class="paper-topline">
+          <div class="paper-side-label">
+            <strong>Zila & Richard</strong>
+            <span>Edición especial</span>
+          </div>
+
+          <div class="paper-title-wrap">
+            <div class="paper-brand">The</div>
+            <div class="paper-title">Boston News</div>
+          </div>
+
+          <div class="paper-stamp">
+            <div class="stamp-circle">
+              <span>LOVE</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="paper-subline">
+          <span>No. 578 26P</span>
+          <span>Noticia de última hora</span>
+          <span>Martes 07, Abril 2026</span>
+        </div>
+      </div>
+
+      <div class="paper-headline">
+        Zila dijo sí a Richard
+      </div>
+
+      <div class="paper-body">
+        <aside class="paper-sidebar">
+          <div class="sidebar-section">
+            <h3>Inside</h3>
+            <p>
+              Richard sorprendió a Zila con una propuesta inolvidable,
+              llena de emoción, ternura y promesas sinceras.
+            </p>
+          </div>
+
+          <div class="sidebar-photo">
+            <img src="img/foto_lateral.jpg" alt="Foto lateral de Zila y Richard" />
+          </div>
+
+          <div class="sidebar-section sidebar-quote">
+            <p>
+              “Una noche especial se convirtió en el inicio
+              de una nueva etapa.”
+            </p>
+          </div>
+
+          <div class="sidebar-section">
+            <h3>Testigos del amor</h3>
+            <p>
+              Familiares y seres queridos celebran con alegría
+              el compromiso de una pareja que ha construido su historia
+              con amor, respeto y bendición.
+            </p>
+          </div>
+
+          <div class="sidebar-section">
+            <h3>Crónica romántica</h3>
+            <p>
+              Lo que parecía una noche especial se convirtió
+              en un recuerdo eterno: un “sí” pronunciado desde el corazón.
+            </p>
+          </div>
+        </aside>
+
+        <section class="paper-main">
+          <div class="paper-main-photo">
+            <img src="img/foto_portada.jpg" alt="Portada principal de Zila y Richard" />
+          </div>
+
+          <div class="paper-main-subtitle">
+            Una propuesta inolvidable selló el inicio
+            de una nueva historia de amor.
+          </div>
+
+          <div class="paper-main-text">
+            <p>
+              La noticia que hoy llena de emoción a familiares y amigos ya es oficial:
+              Zila y Richard han decidido dar un paso más en su historia.
+              Con una propuesta llena de sentimiento y un “sí” pronunciado desde el corazón,
+              ambos celebran el comienzo de una nueva etapa marcada por la ilusión,
+              la gratitud y el deseo de caminar juntos hacia el futuro.
+            </p>
+
+            <p>
+              Esta edición especial recoge uno de los momentos más hermosos de su vida:
+              una promesa de amor que ahora se convierte en motivo de celebración.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div class="paper-action">
+        <button class="enter-button" id="enterBtn">Leer la noticia</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- INVITACION -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <img class="hero-bg" src="img/foto1.jpg" alt="Zila y Richard" />
+
+    <div class="hero-content">
+      <p class="hero-kicker">Nuestro compromiso</p>
+      <h1>Zila <span>&amp;</span> Richard</h1>
+      <p class="hero-quote">Te prometo amarte siempre</p>
+      <p class="hero-text">
+        Con alegría en el corazón queremos invitarte a compartir con nosotros
+        un momento muy especial, donde celebraremos nuestro amor, nuestra promesa
+        y el inicio de una nueva etapa.
+      </p>
+
+      <div class="hero-date">18 de abril de 2026 · 6:00 pm</div>
+
+      <div class="music-callout">
+        <p>Haz clic para escuchar nuestra canción</p>
+        <div class="music-controls">
+          <button id="playPauseBtn" class="music-btn music-btn--main" aria-label="Reproducir música">▶</button>
+          <button id="muteBtn" class="music-btn" aria-label="Activar o silenciar audio">🔊</button>
+        </div>
+        <audio id="bgMusic" preload="metadata">
+          <source src="music/Lewis Capaldi - Someone You Loved.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#rsvp">Confirmar asistencia</a>
+        <a class="btn btn-outline" href="#detalles">Ver detalles</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section intro">
+      <div class="container narrow decorated-card decorated-card--soft">
+        <img class="flower-vertical flower-vertical--left-mid" src="img/florl.png" alt="" aria-hidden="true" />
+        <img class="flower-vertical flower-vertical--right-top" src="img/flor1.png" alt="" aria-hidden="true" />
+        <img class="flower-horizontal flower-horizontal--intro" src="img/flor_horizontal.png" alt="" aria-hidden="true" />
+
+        <div class="section-heading">
+          <span class="ornament"></span>
+          <h2>Con la bendición de Dios</h2>
+        </div>
+        <p class="section-copy">
+          Nos complace invitarte a ser parte de este momento tan especial en nuestras vidas.
+          Junto a nuestras familias queremos celebrar este compromiso con amor, gratitud y esperanza,
+          rodeados de las personas que más queremos.
+        </p>
+      </div>
+    </section>
+
+    <div class="section-separator">
+      <img src="img/separador.png" alt="" aria-hidden="true" />
+    </div>
+
+    <section class="section story-section">
+      <div class="container narrow decorated-card">
+        <img class="flower-vertical flower-vertical--story-right" src="img/flor_vertical.png" alt="" aria-hidden="true" />
+        <img class="flower-horizontal flower-horizontal--story-bottom" src="img/flor_horizontal.png" alt="" aria-hidden="true" />
+
+        <div class="section-heading">
+          <span class="ornament"></span>
+          <h2>Nuestra historia</h2>
+        </div>
+
+        <div class="story-layout">
+          <div class="story-photo-column">
+            <div class="story-vertical-frame">
+              <img src="img/foto2.jpg" alt="Foto vertical de Zila y Richard" />
+            </div>
+            <div class="story-vertical-frame">
+              <img src="img/foto3.jpg" alt="Otra foto vertical de Zila y Richard" />
+            </div>
+          </div>
+
+          <div class="story-text-card">
+            <p>
+              En medio de una sociedad colmada de distracciones, vanidades y efímeros instantes.
+              Dios, en su infinita bondad, posó su mirada sobre dos almas que, sin saberlo,
+              aguardaban encontrarse, encendiendo en ellas una luz de esperanza.
+            </p>
+
+            <p><strong>Así comienza nuestra historia...</strong></p>
+
+            <p>
+              Entre momentos sencillos, sonrisas compartidas y silencios cómplices, nació un
+              sentimiento puro, que con el tiempo floreció en un amor profundo, sincero y lleno de ilusión.
+            </p>
+
+            <p>
+              Fue un 16 de enero de 2022 cuando decidimos caminar juntos, transformando aquel sentir
+              en una promesa viva. Desde entonces, hemos aprendido a crecer de la mano, a sostenernos
+              en la dificultad y a elegirnos cada día, fortaleciendo un vínculo bendecido ante los ojos de Dios.
+            </p>
+
+            <p>
+              Hoy, con el corazón lleno de gratitud por todo lo vivido, comprendemos que nuestro encuentro
+              no fue casualidad, sino parte de un propósito divino.
+            </p>
+
+            <p>
+              Por ello, queremos invitarte a ser parte de un momento muy especial en nuestras vidas,
+              donde nuestro amor dará un paso importante en este camino que seguimos construyendo juntos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-separator">
+      <img src="img/separador.png" alt="" aria-hidden="true" />
+    </div>
+
+    <section class="section countdown-section">
+      <div class="container narrow center decorated-card">
+        <img class="flower-vertical flower-vertical--countdown-left" src="img/flor_vertical.png" alt="" aria-hidden="true" />
+        <img class="flower-horizontal flower-horizontal--countdown-bottom" src="img/flor_horizontal.png" alt="" aria-hidden="true" />
+
+        <img class="featured-photo" src="img/foto4.jpg" alt="Foto romántica de Zila y Richard" />
+        <div class="section-heading">
+          <span class="ornament"></span>
+          <h2>Faltan</h2>
+        </div>
+        <div class="countdown" id="countdown">
+          <div class="count-item"><span id="days">00</span><small>Días</small></div>
+          <div class="count-item"><span id="hours">00</span><small>Horas</small></div>
+          <div class="count-item"><span id="minutes">00</span><small>Minutos</small></div>
+          <div class="count-item"><span id="seconds">00</span><small>Segundos</small></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-separator">
+      <img src="img/separador.png" alt="" aria-hidden="true" />
+    </div>
+
+    <section class="section details-section" id="detalles">
+      <div class="container narrow decorated-card">
+        <img class="flower-vertical flower-vertical--details-right" src="img/flor_vertical.png" alt="" aria-hidden="true" />
+        <img class="flower-horizontal flower-horizontal--details-top" src="img/flor_horizontal.png" alt="" aria-hidden="true" />
+
+        <div class="section-heading">
+          <span class="ornament"></span>
+          <h2>El gran día</h2>
+        </div>
+
+        <div class="details-card">
+          <p class="event-date">Sábado 18 de abril de 2026</p>
+          <h3>Dirección</h3>
+          <p class="event-place">Casa Maja</p>
+          <p class="event-time">Hora 6:00 pm</p>
+          <a class="btn btn-primary" href="https://maps.app.goo.gl/7sYJG6fn1KEaf3Jj7" target="_blank" rel="noopener noreferrer">Ver mapa</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-separator">
+      <img src="img/separador.png" alt="" aria-hidden="true" />
+    </div>
+
+    <section class="section gallery-section">
+      <div class="container narrow decorated-card decorated-card--soft">
+        <img class="flower-vertical flower-vertical--gallery-left" src="img/flor_vertical.png" alt="" aria-hidden="true" />
+        <img class="flower-horizontal flower-horizontal--gallery-bottom" src="img/flor_horizontal.png" alt="" aria-hidden="true" />
+
+        <div class="section-heading">
+          <span class="ornament"></span>
+          <h2>Con mucho cariño</h2>
+        </div>
+        <p class="section-copy">
+          Será un honor contar con tu presencia en este día tan importante para nosotros.
+          Queremos compartir esta promesa de amor contigo y celebrar juntos este hermoso comienzo.
+        </p>
+        <div class="gallery-single">
+          <img src="img/foto5.jpg" alt="Zila y Richard juntos" />
+        </div>
+      </div>
+    </section>
+
+    <div class="section-separator">
+      <img src="img/separador.png" alt="" aria-hidden="true" />
+    </div>
+
+    <section class="section rsvp-section" id="rsvp">
+      <div class="container narrow center decorated-card">
+        <img class="flower-vertical flower-vertical--rsvp-right" src="img/flor_vertical1.png" alt="" aria-hidden="true" />
+        <img class="flower-horizontal flower-horizontal--rsvp-bottom" src="img/flor_horizontal.png" alt="" aria-hidden="true" />
+
+        <img class="rsvp-photo" src="img/foto6.jpg" alt="Foto de detalle del compromiso" />
+        <div class="section-heading">
+          <span class="ornament"></span>
+          <h2>Confirmar asistencia</h2>
+        </div>
+        <p class="section-copy">
+          Nos encantará compartir este momento contigo. Por favor, confírmanos tu asistencia por WhatsApp.
+        </p>
+        <a class="btn btn-whatsapp" href="https://wa.me/51904488221?text=Hola%2C%20quiero%20confirmar%20mi%20asistencia%20al%20compromiso%20de%20Zila%20y%20Richard" target="_blank" rel="noopener noreferrer">Confirmar con Zila</a>
+         <a class="btn btn-whatsapp" href="https://wa.me/51957786975?text=Hola%2C%20quiero%20confirmar%20mi%20asistencia%20al%20compromiso%20de%20Zila%20y%20Richard" target="_blank" rel="noopener noreferrer">Confirmar con Richard</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Zila &amp; Richard · 18 de abril de 2026</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
